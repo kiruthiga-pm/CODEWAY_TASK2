@@ -1,0 +1,207 @@
+******************************* HTML *******************************
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="portfolio.css">
+  <style>
+    
+  </style>
+</head>
+<body>
+  <header>
+    <div id="logo">KIRUTHIGA</div>
+    <nav>
+      <a href="#info">ABOUT</a>
+      <a href="#skills">SKILLS</a>
+      <a href="#project">PROJECT</a>
+      <a href="#resume">RESUME</a>
+      <a href="#contact">CONTACT</a>
+    </nav>
+  </header>
+  <section class="info">
+    <img class="circular-frame" src="image1.jpg" alt="your image">
+    <div class="bio">
+        <h1>ABOUT</h1>
+        <h2>A self-motivated and passionate computer science student looking for a challenging career 
+            that provides me a stage to present my practical as well as theoretical knowledge and 
+            further help me in developing my research as well as experimental skills so that I can 
+            extend myself to higher work in my field of technical interests.
+        </h2>
+    </div>
+  </section>
+  <section class="skills" id="skills">
+    <h2 class="header">My Top Skills</h2>
+    <div class="wrapper">
+      <div class="first-set animate__animated animate__pulse">
+        <img src="html5.webp" alt="html" class="icon icon-card" />
+        <img src="css3.png" alt="css" class="icon icon-card"/>
+        <img src="js.webp" alt="js" class="icon icon-card"/>
+      </div>
+      <div class="second-set animate__animated animate__pulse">
+        <img src="c.png" alt="c" class="icon icon-card" />
+        <img src="Python.png" alt="python" class="icon icon-card"/>
+        <img src="powerbi.png" alt="bi" class="icon icon-card"/>
+      </div>
+    </div>
+  </section>
+  <section class="project" id="project">
+    <h2 class="header">PROJECTS</h2>
+    <div class="wrapper">
+      <div>
+        <img src="quizb.jpg" alt="quiz buzzer" class="icon icon-card"/>
+        <img src="quizg.jpg" alt="quiz game" class="icon icon-card"/>
+      </div>
+    </div>
+    <div class="des">
+      <div><p><h4>FASTEST FINGERS FIRST CIRCUIT</h4>I have designed a quiz buzzer which identifies who pressed the buzzer first inorder to avoid any confusions in the quiz </p></div>
+      <div><p><h4>QUIZ GAME USING ARDUINO</h4>It asks user a series of predefined questions with options and display the score at last</p></div>
+    </div>
+  </section>
+  <h2>RESUME</h2>
+  <section class="resume" id="resume">
+    <p>To know more about my skills project and certifications click on the link to download my resume</p>
+    <a href="">RESUME</a>
+  </section>
+  <h2>CONTACT</h2>
+  <section class="contact" id="contact">
+    <div>
+      <img src="em.jpg" class="item">
+      <p class="item">pmkiruthiga17@gmail.com</p>
+      <img src="calling.avif" class="item">
+      <p class="item">+91 1234567890</p>
+      <img src="linkedin.jpg" class="item">
+      <p class="item">kiruthiga-pm</p>
+    </div>
+  </section>
+  <footer>
+    <p class="copy">&copy; Copyright 2023 KIRUTHIGA. All rights reserved.</p>
+</footer>
+</body>
+</html>
+
+******************************* CSS *******************************
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-image: url('bluebg.webp');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+header{
+  padding: 10px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top:20px;
+}
+#logo {
+  color: #fff;
+  font-size: 35px;
+  margin-left: 60px; /* Adjust margin as needed */
+}
+nav {
+  margin-right: 20px; /* Adjust margin as needed */
+}
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 10px;
+}
+nav a:hover {
+  color:#87cef9;
+  font-weight: bold;
+}
+.info{
+    width:90%;
+    height:250px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top:100px;
+    margin-left:50px;
+}
+.circular-frame {
+  width: 250px; /* Adjust the size of the circular frame */
+  height: 250px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #fff; /* Adjust border color and width as needed */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a shadow for a 3D effect */
+  float:left;
+}
+.circular-frame img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.bio{
+  width:70%;
+  margin-right:30px;
+  text-align: center;
+  justify-content: space-around;
+  font-size:xx-small;
+  font-weight:25%;
+  float:right;
+  color:#fff;
+}
+.skills, .project, .contact{
+  max-width: 68.75rem;
+  margin: auto;
+  text-align: center;
+  margin-top: 2.5rem;
+  color:white;
+}
+.header {
+  margin-bottom: 1rem;
+  color:white;
+}
+.wrapper img {
+  padding: 1.25rem;
+}
+.icon {
+  width: 120px;
+  height: 120px;
+}
+.icon-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 3px 10px white;
+  padding: 20px;
+  margin: 10px;
+}
+.des{
+  color:white;
+  text-align: center;
+  width:50%;
+  padding-left: 25%;;
+}
+.resume{
+  color:white;
+  text-align: center;
+}
+.item{
+  display:inline-block;
+  justify-content: space-around;
+  margin-left:40px;
+  color:white;
+}
+.contact img{
+  width:20px;
+  height:20px;
+}
+footer {
+  background-color:gainsboro;
+  padding: 1.25rem;
+  text-align: center;
+  margin: 1rem 0 0;
+}
+h2{
+  text-align: center; color:white; margin-top: 40px;
+}
